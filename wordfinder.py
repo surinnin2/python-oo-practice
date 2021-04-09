@@ -3,7 +3,12 @@ import random
 
 class WordFinder:
     def __init__(self, file_path):
-        """initialize new wordfinder with a filepath, empty list, and run read method on it"""
+        """initialize new wordfinder with a filepath, empty list, and run read method on it
+
+        >>> wf = WordFinder("word.txt")
+        235886 words read
+
+        """
         self.file_path = file_path
         self.list = []
         self.read()
